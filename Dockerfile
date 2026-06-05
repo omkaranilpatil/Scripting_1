@@ -1,5 +1,5 @@
-FROM python:3.12-slim
+import time
 
-COPY app.py /app.py
-
-CMD ["python3","/app.py"]
+while True:
+    print("Jenkins Container Running")
+    time.sleep(10)
