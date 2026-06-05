@@ -1,5 +1,7 @@
 import time
 
-while True:
+for i in range(5):
     print("Jenkins Container Running")
-    time.sleep(10)
+    time.sleep(5)
+
+print("Completed")
