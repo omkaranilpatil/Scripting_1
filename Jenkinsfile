@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Build Docker Image') {
             steps {
-                checkout scm
+                sh 'docker build -t my-python-app .'
             }
         }
 
-        stage('Run Python') {
+        stage('Run Container') {
             steps {
-                sh 'python3 app.py'
+                sh 'docker run --rm my-python-app'
             }
         }
     }
