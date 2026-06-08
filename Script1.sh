@@ -7,4 +7,4 @@ echo "my carreer has been started now"
 echo "HELLO DOSTO"
 echo "let's start with git"
 echo "hello buddy this is for test"
-
+echo "HELLO friends"
